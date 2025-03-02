@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+          }
+          
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class=" poppins bg-slate-300">
+    <nav class=" bg-white rounded-2xl px-[20px] w-[85vw] h-[5.5vw] flex justify-between items-center mx-auto my-[1.42vw]">
+        <div class="flex">
+            <img src="assets/logo.png" alt="" class="h-[2.8vw]">
+            <h1 class=" text-[2vw] font-[400]">Dev<span class="font-[700]">Board</span></h1>
+        </div>
+        <div class="flex items-center gap-[36px]">
+            <div class="flex justify-around items-center h-[3.5vw] w-[6.8vw] bg-[#F4F7FF] rounded-2xl">
+                <img src="assets/checkbox.png" alt="" class="h-[1.76vw]">
+                <h1 id="plusNum" class="text-[1.76vw] font-[600]">23</h1>
+            </div>
+            <img src="assets/theme-btn.png" alt="" class="h-[2.8vw]" id="color">
+        </div>
+    </nav>
+    <!-- whole -->
+    <div class=" flex justify-between w-[85vw] mx-auto ">
+        <!-- main -->
+        <div class=" w-[63.106vw] h-[50.551vw] bg-white flex flex-col justify-evenly rounded-2xl">
+            <!-- nav -->
+            <div class=" flex justify-evenly">
+                <div class=" w-[14.48vw] h-[7.05vw] bg-[#F4F7FF] rounded-2xl flex justify-around items-center">
+                    <div class=" w-[3.524vw] h-[3.524vw] bg-white flex justify-center items-center rounded-[50%]">
+                        <img src="assets/checkbox.png" alt="" class="h-[1.542vw]">
+                    </div>
+                    <div class="">
+                        <p class=" text-[16px] font-[500]">Task Assigned</p>
+                        <h1 id="minusNum" class=" font-[700] text-[1.76vw] ">6</h1>
+                    </div>
+                </div>
+                <div class=" w-[28.855vw] h-[7.05vw] bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-2xl flex justify-center gap-6 items-center">
+                    <div class="">
+                        <img src="assets/board.png" alt="" class="h-[3.9vw]">
+                    </div>
+                    <div class="">
+                        <p class=" text-white text-[16px] font-[500]">Discover Something <br>New Today!</p>
+                    </div>
+                </div>
+                <div class=" w-[14.48vw] h-[7.05vw] bg-[#F4F7FF] rounded-2xl flex justify-around items-center">
+                    <div class=" w-[3.524vw] h-[3.524vw] bg-white flex justify-center items-center rounded-[50%]">
+                        <img src="assets/calender.png" alt="" class="h-[1.542vw]">
+                    </div>
+                    <div class="">
+                        <p id="day" class=" text-[16px] font-[500]">Wed ,</p>
+                        <h1 id="date" class=" font-[700] text-[1.22vw] ">Jul 28 2025</h1>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- card parent -->
+            <div id="parent" class=" grid grid-cols-3 justify-around gap-[1.9vw] mx-auto">
+                <!-- card 1 -->
+                <div id="card" class=" w-[18.833vw] h-[17.456vw] bg-[#F4F7FF] flex flex-col justify-around rounded-2xl ">
+                    <div class="mx-[16px]">
+                        <p class="font-[400] text-[0.881vw] py-[5px] px-[10px] rounded-2xl bg-white inline">ShopEase</p>   
+                    </div>
+                    <h1 class=" tittle font-[500] text-[1.322vw] mx-[16px]">Fix Mobile Button Issue</h1>
+                    <div class=" w-[16.19vw] h-[5.1vw] bg-white mx-[16px]">
+                        <p class="text-[0.881vw] font-[400] p-[10px]">Debug using Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex gap-3 mx-[16px]">
+                        <div class="">
+                            <p class="text-[0.881vw]">Deadline</p>
+                            <h1 class=" text-[1.322vw] font-[500]">March 2025</h1>
+                        </div>
+                        <button id="btn" class=" btn w-[7.43vw] h-[2.423vw] text-white bg-[#3752FD] rounded-lg text-[0.881vw]">Completed</button>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div id="card" class=" w-[18.833vw] h-[17.456vw] bg-[#F4F7FF] flex flex-col justify-around rounded-2xl ">
+                    <div class="mx-[16px]">
+                        <p class="font-[400] text-[0.881vw] py-[5px] px-[10px] rounded-2xl bg-white inline">CloudSync</p>   
+                    </div>
+                    <h1 class=" tittle font-[500] text-[1.322vw] mx-[16px]">Add Dark Mode</h1>
+                    <div class=" w-[16.19vw] h-[5.1vw] bg-white mx-[16px]">
+                        <p class="text-[0.881vw] font-[400] p-[10px]">Store the user's preference in localStorage, update CSS... </p>
+                    </div>
+                    <div class="flex gap-3 mx-[16px]">
+                        <div class="">
+                            <p class="text-[0.881vw]">Deadline</p>
+                            <h1 class=" text-[1.322vw] font-[500]">March 2025</h1>
+                        </div>
+                        <button id="btn" class=" btn w-[7.43vw] h-[2.423vw] text-white bg-[#3752FD] rounded-lg text-[0.881vw]">Completed</button>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div id="card" class=" w-[18.833vw] h-[17.456vw] bg-[#F4F7FF] flex flex-col justify-around rounded-2xl ">
+                    <div class="mx-[16px]">
+                        <p class="font-[400] text-[0.881vw] py-[5px] px-[10px] rounded-2xl bg-white inline">SwiftPay</p>   
+                    </div>
+                    <h1 class=" tittle font-[500] text-[1.322vw] mx-[16px]">Optimize Home page</h1>
+                    <div class=" w-[16.19vw] h-[5.1vw] bg-white mx-[16px]">
+                        <p class="text-[0.881vw] font-[400] p-[10px]">Debug using Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex gap-3 mx-[16px]">
+                        <div class="">
+                            <p class="text-[0.881vw]">Deadline</p>
+                            <h1 class=" text-[1.322vw] font-[500]">March 2025</h1>
+                        </div>
+                        <button id="btn" class=" btn w-[7.43vw] h-[2.423vw] text-white bg-[#3752FD] rounded-lg text-[0.881vw]">Completed</button>
+                    </div>
+                </div>
+                <!-- card  4-->
+                <div id="card" class=" w-[18.833vw] h-[17.456vw] bg-[#F4F7FF] flex flex-col justify-around rounded-2xl ">
+                    <div class="mx-[16px]">
+                        <p class="font-[400] text-[0.881vw] py-[5px] px-[10px] rounded-2xl bg-white inline">Meta</p>   
+                    </div>
+                    <h1 class=" tittle font-[500] text-[1.322vw] mx-[16px]">Add new emoji 🤲</h1>
+                    <div class=" w-[16.19vw] h-[5.1vw] bg-white mx-[16px]">
+                        <p class="text-[0.881vw] font-[400] p-[10px]">Debug using Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex gap-3 mx-[16px]">
+                        <div class="">
+                            <p class="text-[0.881vw]">Deadline</p>
+                            <h1 class=" text-[1.322vw] font-[500]">March 2025</h1>
+                        </div>
+                        <button id="btn" class=" btn w-[7.43vw] h-[2.423vw] text-white bg-[#3752FD] rounded-lg text-[0.881vw]">Completed</button>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div id="card" class=" w-[18.833vw] h-[17.456vw] bg-[#F4F7FF] flex flex-col justify-around rounded-2xl ">
+                    <div class="mx-[16px]">
+                        <p class="font-[400] text-[0.881vw] py-[5px] px-[10px] rounded-2xl bg-white inline">Google LLC </p>   
+                    </div>
+                    <h1 class=" tittle font-[500] text-[1.322vw] mx-[16px]">Integrate OpenAI API</h1>
+                    <div class=" w-[16.19vw] h-[5.1vw] bg-white mx-[16px]">
+                        <p class="text-[0.881vw] font-[400] p-[10px]">Debug using Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex gap-3 mx-[16px]">
+                        <div class="">
+                            <p class="text-[0.881vw]">Deadline</p>
+                            <h1 class=" text-[1.322vw] font-[500]">March 2025</h1>
+                        </div>
+                        <button id="btn" class=" btn w-[7.43vw] h-[2.423vw] text-white bg-[#3752FD] rounded-lg text-[0.881vw]">Completed</button>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div id="card" class=" w-[18.833vw] h-[17.456vw] bg-[#F4F7FF] flex flex-col justify-around rounded-2xl ">
+                    <div class="mx-[16px]">
+                        <p class="font-[400] text-[0.881vw] py-[5px] px-[10px] rounded-2xl bg-white inline">Glassdoar</p>   
+                    </div>
+                    <h1 class=" tittle font-[500] text-[1.322vw] mx-[16px]">Improve Job searching</h1>
+                    <div class=" w-[16.19vw] h-[5.1vw] bg-white mx-[16px]">
+                        <p class="text-[0.881vw] font-[400] p-[10px]">Debug using Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex gap-3 mx-[16px]">
+                        <div class="">
+                            <p class="text-[0.881vw]">Deadline</p>
+                            <h1 class=" text-[1.322vw] font-[500]">March 2025</h1>
+                        </div>
+                        <button id="btn" class=" btn w-[7.43vw] h-[2.423vw] text-white bg-[#3752FD] rounded-lg text-[0.881vw]">Completed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- side log -->
+        <div class=" w-[20.154vw] h-[50.551vw] bg-white rounded-2xl">
+            <!-- nav -->
+            <div class="text-center my-7">
+                <div class="flex justify-center items-center py-2">
+                    <img src="assets/activity.png" alt="" class=" h-[1.322vw]">
+                    <p class="font-[500] text-[1.322vw] mx-[16px]">Activity Log</p>
+                </div>
+                <button id="clear" class=" w-[7.43vw] h-[2.423vw] text-white bg-[#3752FD] rounded-lg text-[0.881vw]">Clear History</button>
+            </div>
+            <hr>
+            <div id="contetParent" class="flex flex-col">
+            
+            </div>
+        </div>
+    </div>
+    <script src="script/color.js">
+    </script>
+    <script src="script/date.js">
+    </script>
+    <script src="script/main.js">
+    </script>
+    <script src="script/delete.js">
+    </script>
+</body>
+</html>
