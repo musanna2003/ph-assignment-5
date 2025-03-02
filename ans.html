@@ -16,8 +16,67 @@
     <title>Document</title>
 </head>
 <body class=" poppins bg-slate-300">
-    <div class=" bg-white rounded-2xl px-[20px] w-[85vw] h-[45.5vw] mx-auto my-[1.42vw]">
+    <nav class=" bg-white rounded-2xl px-[20px] w-[85vw] h-[5.5vw] flex justify-between items-center mx-auto my-[1.42vw]">
+        <div class="flex">
+            <img src="assets/logo.png" alt="" class="h-[2.8vw]">
+            <h1 class=" text-[2vw] font-[400]">Dev<span class="font-[700]">Board</span></h1>
+        </div>
+        <div class="">
+            <button id="home" class=" btn w-[7.43vw] h-[2.423vw] text-white bg-[#3752FD] rounded-lg text-[0.881vw]">Back to Desk</button>
+        </div>
+    </nav>
+    <div class=" flex justify-center items-center"> <h1 class="font-[700] text-[2vw]">Blogs</h1></div>
+    <div class=" bg-white rounded-2xl p-10 w-[85vw] h-auto mx-auto my-[1.42vw]">
+        <h1 class="font-[600] text-[1.322vw] m-[16px]">
+            Question-1: What are the different ways to select an element in the DOM?
+        </h1>
+        <hr>
+        <p class="font-[400] text-[1.22vw] m-[16px]">
+            There are five ways, <br>1.document.getElementsBytagName() <br>2.document.getElementByid() <br>3.document.getElementsByClssName() <br>4.document.querySelector() and <br>5.document.querySelectorAll().
+        </p>
+        
+    </div>    
+    <div class=" bg-white rounded-2xl p-10 w-[85vw] h-auto mx-auto my-[1.42vw]">    
+        <h1 class="font-[600] text-[1.322vw] m-[16px]">
+            Question-2: What is the difference between innerHTML, innerText, and textContent ?
+        </h1>
+        <hr>
+        <p class="font-[400] text-[1.22vw] m-[16px]">
+            innerHTML return all element in side a section like div,h1,p <br>innerText return only visible text in side the elament <br> and textContent is return all text.
+        </p>
+        
+    </div>    
+    <div class=" bg-white rounded-2xl p-10 w-[85vw] h-auto mx-auto my-[1.42vw]">    
+        <h1 class="font-[600] text-[1.322vw] m-[16px]">
+            Question-3: What is event delegation in the DOM?
+        </h1>
+        <hr>
+        <p class="font-[400] text-[1.22vw] m-[16px]">
+            Basicly it is a efficient way to handel eventHandler. here we add event handler in parent element instade of child element. 
+        </p>
 
-    </div>
+    </div>    
+    <div class=" bg-white rounded-2xl p-10 w-[85vw] h-auto mx-auto my-[1.42vw]">    
+        <h1 class="font-[600] text-[1.322vw] m-[16px]">
+            Question-4: What is event bubbling in the DOM?
+        </h1>
+        <hr>
+        <p class="font-[400] text-[1.22vw] m-[16px]">
+            Event bubbling is a concept in the DOM where an event that occurs on an element propagates upwards through its ancestors in the DOM tree, starting from the target element and moving up to the root of the document  element. 
+        </p>
+        
+    </div>    
+    <div class=" bg-white rounded-2xl p-10 w-[85vw] h-auto mx-auto my-[1.42vw]">    
+        <h1 class="font-[600] text-[1.322vw] m-[16px]">
+            Question-5: How do you create, add, and remove elements using JavaScript?
+        </h1>
+        <hr>
+        <p class="font-[400] text-[1.22vw] m-[16px]">
+            Creating Elements: document.createElement() <br>
+            Adding Elements to the DOM: document.getElementByid().appendChild(newElement); <br>
+            Removing Elements from the DOM: document.getElementByid().remove();
+        </p>
+    </div>    
+    <script src="script/homepage.js"></script>    
 </body>
 </html>
