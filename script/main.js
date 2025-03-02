@@ -1,5 +1,6 @@
 let topic= "";
 let time=""
+let count = 0
 // time
 setInterval(() => {
     const currentDate = new Date();
@@ -40,6 +41,11 @@ document.getElementById('parent').addEventListener("click", function(event){
         const parent = document.getElementById('contetParent')
         parent.appendChild(newSec);
         // push
+        alert("board update successfully..!")
+        count++
+        if (count == 6){
+            alert("congrats..! you have completed all current tasks..")
+        }
 
     }   
 })
